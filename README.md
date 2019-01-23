@@ -2,7 +2,7 @@
 
 > 整理关于vscode编辑器常用的自定义配置
 
-```json
+```
 {
     // VScode主题配置
     "editor.fontSize": 18,
@@ -152,10 +152,10 @@
     "html.format.enable": false,
 
     // By default, create file  username
-    "fileheader.Author": "liuyun",
+    "fileheader.Author": "tabliu",
 
     // By default, update file  username.
-    "fileheader.LastModifiedBy": "liuyun",
+    "fileheader.LastModifiedBy": "tabliu",
     "vsicons.dontShowNewVersionMessage": true,
     "liveServer.settings.donotShowInfoMsg": true,
 
