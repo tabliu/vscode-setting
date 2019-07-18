@@ -148,10 +148,10 @@
     "git.autofetch": false,
     "git.ignoreLegacyWarning": true,
     // By default, create file  username
-    "fileheader.Author": "liuyun",
+    "fileheader.Author": "xxx",
     "fileheader.tpl": "/** * @Author: {author}  * @Date: {createTime}  * @Last Modified by:   {lastModifiedBy}  * @Last Modified time: {updateTime}  */",
     // By default, update file  username.
-    "fileheader.LastModifiedBy": "liuyun",
+    "fileheader.LastModifiedBy": "xxx",
     // liveServer
     "liveServer.settings.port": 8888, //设置本地服务的端口号
     "liveServer.settings.root": "/", //设置根目录，也就是打开的文件会在该目录下找
