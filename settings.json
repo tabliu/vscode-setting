@@ -20,7 +20,7 @@
   "editor.snippetSuggestions": "top",
   "editor.renderControlCharacters": true,
   // 保存时设置文件的格式。格式化程序必须可用，不能自动保存文件，并且不能关闭编辑器。
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   // VScode文件配置
   // 排除文件搜索区域，比如node_modules(贴心的默认设置已经屏蔽了)
   "files.exclude": {
@@ -80,7 +80,7 @@
     // - aligned-multiple: 当超出折行长度时，将属性进行垂直对齐。
     "js-beautify-html": {
       "wrap_line_length": 80,
-      "wrap_attributes": "force-expand-multiline",
+      "wrap_attributes": "auto",
       "end_with_newline": false
     },
     "prettier": {
@@ -146,10 +146,10 @@
   "git.autofetch": false,
   "git.ignoreLegacyWarning": true,
   // By default, create file  username
-  "fileheader.Author": "liuyun",
+  "fileheader.Author": "author",
   "fileheader.tpl": "/** * @Author: {author}  * @Date: {createTime}  * @Last Modified by:   {lastModifiedBy}  * @Last Modified time: {updateTime}  */",
   // By default, update file  username.
-  "fileheader.LastModifiedBy": "liuyun",
+  "fileheader.LastModifiedBy": "author",
   // liveServer
   "liveServer.settings.port": 8888, //设置本地服务的端口号
   "liveServer.settings.root": "/", //设置根目录，也就是打开的文件会在该目录下找

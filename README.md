@@ -25,7 +25,7 @@
   "editor.snippetSuggestions": "top",
   "editor.renderControlCharacters": true,
   // 保存时设置文件的格式。格式化程序必须可用，不能自动保存文件，并且不能关闭编辑器。
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   // VScode文件配置
   // 排除文件搜索区域，比如node_modules(贴心的默认设置已经屏蔽了)
   "files.exclude": {
@@ -85,7 +85,7 @@
     // - aligned-multiple: 当超出折行长度时，将属性进行垂直对齐。
     "js-beautify-html": {
       "wrap_line_length": 80,
-      "wrap_attributes": "force-expand-multiline",
+      "wrap_attributes": "auto",
       "end_with_newline": false
     },
     "prettier": {
