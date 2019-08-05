@@ -25,7 +25,7 @@
   "editor.snippetSuggestions": "top",
   "editor.renderControlCharacters": true,
   // 保存时设置文件的格式。格式化程序必须可用，不能自动保存文件，并且不能关闭编辑器。
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   // VScode文件配置
   // 排除文件搜索区域，比如node_modules(贴心的默认设置已经屏蔽了)
   "files.exclude": {
@@ -38,6 +38,7 @@
   // 配置文件关联，以便启用对应的智能提示，比如wxss使用css
   "files.associations": {
     "*.vue": "vue",
+    "*.mpx": "vue",
     "*.wxss": "css",
     "*.cjson": "jsonc",
     "*.wxs": "javascript",
@@ -84,9 +85,13 @@
     // - force-expand-multiline: 对每个属性进行换行。
     // - aligned-multiple: 当超出折行长度时，将属性进行垂直对齐。
     "js-beautify-html": {
-      "wrap_line_length": 80,
+      "wrap_line_length": 100,
       "wrap_attributes": "auto",
       "end_with_newline": false
+    },
+    "prettyhtml": {
+      "printWidth": 100, // No line exceeds 100 characters
+      "singleQuote": false // Prefer double quotes over single quotes
     },
     "prettier": {
       "semi": false, //不使用分号结尾
@@ -127,6 +132,7 @@
   "emmet.syntaxProfiles": {
     "vue-html": "html",
     "vue": "html",
+    "mpx": "html",
     "vxml": "html",
     "javascript": "javascriptreact",
     // xml类型文件默认都是单引号，开启对非单引号的emmet识别
@@ -139,6 +145,7 @@
     "jsx-sublime-babel-tags": "javascriptreact",
     "vue-html": "html",
     "vue": "html",
+    "mpx": "html",
     "wxml": "html"
   },
   // 细节,配置gitlen中git提交历史记录的信息显示情况
