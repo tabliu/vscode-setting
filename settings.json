@@ -1,176 +1,241 @@
 {
-  // VScode 主题配置
+  // vscode默认启用了根据文件类型自动设置tabsize的选项
+  "editor.detectIndentation": false,
   "editor.tabSize": 2,
-  "editor.wordWrapColumn": 100,
-  "editor.fontSize": 18,
-  "editor.fontFamily": "YaHei Consolas Hybrid, Consolas, Courier New, monospace",
-  "editor.find.autoFindInSelection": false,
-  "editor.showFoldingControls": "always",
-  "editor.autoIndent": false,
-  "editor.scrollBeyondLastLine": false,
-  "editor.tabCompletion": "off",
+  "editor.fontSize": 14,
   "editor.lineHeight": 24,
-  "editor.cursorBlinking": "smooth",
   "editor.renderLineHighlight": "none",
-  "editor.renderWhitespace": "none",
-  "editor.wordSeparators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?",
-  "editor.wordWrap": "on",
-  "editor.formatOnPaste": false,
+  "editor.renderWhitespace": "trailing",
+  "editor.fontFamily": "Cascadia Code, Fira Code, Source Code Pro, JetBrains Mono, Meslo LG S DZ for Powerline, Menlo, Monaco, 'Courier New', monospace",
+  "editor.cursorBlinking": "smooth",
   "editor.multiCursorModifier": "ctrlCmd",
+  //保存自动格式化
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.fontLigatures": true,
+  "editor.hover.delay": 5000,
+  // 是否允许自定义的snippet片段提示,比如自定义的vue片段开启后就可以智能提示
   "editor.snippetSuggestions": "top",
+  "editor.wordWrap": "on",
+  "editor.wordSeparators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
+  },
   "editor.renderControlCharacters": true,
-  // 保存时设置文件的格式。格式化程序必须可用，不能自动保存文件，并且不能关闭编辑器。
-  "editor.formatOnSave": true,
-  // VScode文件配置
-  // 排除文件搜索区域，比如node_modules(贴心的默认设置已经屏蔽了)
-  "files.exclude": {
-    "**/.idea": true,
-    "**/yarn.lock": true,
-    "**/tmp": true,
-    "**/.git": false
+  "editor.quickSuggestions": {
+    "strings": true
   },
-  "files.trimTrailingWhitespace": true,
-  // 配置文件关联，以便启用对应的智能提示，比如wxss使用css
-  "files.associations": {
-    "*.vue": "vue",
-    "*.mpx": "vue",
-    "*.wxss": "css",
-    "*.cjson": "jsonc",
-    "*.wxs": "javascript",
-    "*.wxml": "html"
-  },
-  // 文件末尾增加空行
-  "files.insertFinalNewline": true,
-  "files.autoSave": "afterDelay",
-  "files.eol": "\n",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "editor.foldingMaximumRegions": 10000,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.language.brackets": [],
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.sideBar.location": "left",
-  // 控制台显示系统控制台
-  //"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-  // 开启 vscode 文件路径导航
-  "breadcrumbs.enabled": true,
-  // 格式化快捷键 shirt+alt+F
-  // 是否开启eslint检测
-  "eslint.enable": true,
-  // 设置 eslint 保存时自动修复
-  "eslint.autoFixOnSave": true,
-  // eslint 检测文件类型
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "vue-html",
+  "workbench.iconTheme": "vscode-great-icons",
+  "files.autoSave": "afterDelay",
+  "minapp-vscode.disableAutoConfig": true,
+  //  #让函数(名)和后面的括号之间加个空格
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "cSpell.userWords": [
+    "Alipay",
+    "aolin",
+    "appinfo",
+    "blackvip",
+    "checklogin",
+    "cnpm",
+    "createtime",
+    "datetime",
+    "devtool",
+    "echarts",
+    "ehome",
+    "esbuild",
+    "FONTON",
+    "foton",
+    "ftej",
+    "kuanghua",
+    "Lazyload",
+    "linebreak",
+    "linkhomepage",
+    "loginname",
+    "managementbly",
+    "mkcert",
+    "mockjs",
+    "musnow",
+    "noredirect",
+    "nprogress",
+    "ollin",
+    "opreation",
+    "overrided",
+    "payingmember",
+    "pinia",
+    "prefetch",
+    "promotepage",
+    "pxtorem",
+    "rocar",
+    "svgicon",
+    "tabliu",
+    "tinymce",
+    "tradingvolume",
+    "uglifyjs",
+    "unocss",
+    "unplugin",
+    "updatetime",
+    "uploader",
+    "Vant",
+    "Vconsole",
+    "Vetur",
+    "vsvg",
+    "vueuse",
+    "vuex",
+    "webpack's",
+    "wechat",
+    "wxss",
+    "ZNRRMHD"
+  ],
+  "diffEditor.ignoreTrimWhitespace": false,
+  //配置 ESLint 检查的文件类型
+  "eslint.validate": ["javascript", "javascriptreact", "html", "vue"],
+  //保存时eslint自动修复错误
+  "eslint.autoFixOnSave": false,
+  "eslint.alwaysShowStatus": true,
+  "markdown.extension.toc.plaintext": true,
+  "markdown.extension.toc.orderedList": true,
+  "workbench.colorCustomizations": {
+    "editorIndentGuide.activeBackground": "#00ff00"
+  },
+  "vsicons.projectDetection.autoReload": true,
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
+  "git-graph.commitDetailsView.autoCenter": false,
+  "git-graph.commitDetailsView.fileView.fileTree.compactFolders": false,
+  "bracketPairColorizer.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}; opacity: 0.5"
+  ],
+  "better-comments.tags": [
     {
-      "language": "html",
-      "autoFix": true
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
     {
-      "language": "vue",
-      "autoFix": true
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#404040",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     }
   ],
-  "eslint.run": "onSave",
-  // vetur 的自定义设置
-  "vetur.format.defaultFormatterOptions": {
-    // 对属性进行换行。
-    // - auto: 仅在超出行长度时才对属性进行换行。
-    // - force: 对除第一个属性外的其他每个属性进行换行。
-    // - force-aligned: 对除第一个属性外的其他每个属性进行换行，并保持对齐。
-    // - force-expand-multiline: 对每个属性进行换行。
-    // - aligned-multiple: 当超出折行长度时，将属性进行垂直对齐。
-    "js-beautify-html": {
-      "wrap_line_length": 100,
-      "wrap_attributes": "auto",
-      "end_with_newline": false
-    },
-    "prettyhtml": {
-      "printWidth": 100, // No line exceeds 100 characters
-      "singleQuote": false // Prefer double quotes over single quotes
-    },
-    "prettier": {
-      "semi": false, //不使用分号结尾
-      "singleQuote": true, //使用单引号
-      "eslintIntegration": true //开启 eslint 支持
-    }
+  "window.zoomLevel": 2,
+  "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "XXX", "[ ]", "[x]"],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "terminal.integrated.tabs.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "vsicons.dontShowNewVersionMessage": true,
+  "terminal.integrated.gpuAcceleration": "off",
+  "security.workspace.trust.enabled": false,
+  "faker.locale": "zh_CN",
+  "filesize.displayInfoOnTheRightSideOfStatusBar": true,
+  "git.alwaysSignOff": true,
+  "git.suggestSmartCommit": false,
+  "files.trimTrailingWhitespace": true,
+  //根据文件后缀名定义vue文件类型
+  "files.associations": {
+    "*.vue": "vue"
   },
-  "vetur.validation.template": false,
-  "vetur.format.defaultFormatter.html": "js-beautify-html",
-  "vetur.format.defaultFormatter.ts": "vscode-typescript",
-  "vetur.format.defaultFormatter.css": "prettier",
-  "vetur.format.defaultFormatter.less": "prettier",
-  "vetur.format.defaultFormatter.scss": "prettier",
-  "vetur.format.defaultFormatter.postcss": "prettier",
-  //开启 eslint 支持
-  "prettier.eslintIntegration": true,
-  //使用单引号
-  "prettier.singleQuote": true,
-  //结尾不加分号
-  "prettier.semi": false,
-  // VScode 文件搜索区域配置
-  "search.exclude": {
-    "**/dist": true,
-    "**/build": true,
-    "**/elehukouben": true,
-    "**/.git": true,
-    "**/.gitignore": true,
-    "**/.svn": true,
-    "**/.DS_Store": true,
-    "**/.idea": true,
-    "**/.vscode": false,
-    "**/yarn.lock": true,
-    "**/tmp": true
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // 配置emmet是否启用tab展开缩写
-  "emmet.triggerExpansionOnTab": true,
-  // 配置emmet对文件类型的支持，比如vue后缀文件按照html文件来进行emmet扩写
-  "emmet.syntaxProfiles": {
-    "vue-html": "html",
-    "vue": "html",
-    "mpx": "html",
-    "vxml": "html",
-    "javascript": "javascriptreact",
-    // xml类型文件默认都是单引号，开启对非单引号的emmet识别
-    "xml": {
-      "attr_quotes": "single"
-    }
-  },
-  // 在react的jsx中添加对emmet的支持
-  "emmet.includeLanguages": {
-    "jsx-sublime-babel-tags": "javascriptreact",
-    "vue-html": "html",
-    "vue": "html",
-    "mpx": "html",
-    "wxml": "html"
-  },
-  // 细节,配置gitlen中git提交历史记录的信息显示情况
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true,
-    "suppressUpdateNotice": true
-  },
-  // git是否启用自动拉取
-  "git.confirmSync": false,
-  "git.autofetch": false,
-  "git.ignoreLegacyWarning": true,
-  // By default, create file  username
-  "fileheader.Author": "author",
-  "fileheader.tpl": "/** * @Author: {author}  * @Date: {createTime}  * @Last Modified by:   {lastModifiedBy}  * @Last Modified time: {updateTime}  */",
-  // By default, update file  username.
-  "fileheader.LastModifiedBy": "author",
-  // liveServer
-  "liveServer.settings.port": 8888, //设置本地服务的端口号
-  "liveServer.settings.root": "/", //设置根目录，也就是打开的文件会在该目录下找
-  "liveServer.settings.CustomBrowser": "chrome", //设置默认打开的浏览器
-  "liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome --incognito --remote-debugging-port=9222",
-  "liveServer.settings.NoBrowser": false,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.donotVerifyTags": true,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "view-in-browser.customBrowser": "chrome",
-  "minapp-vscode.disableAutoConfig": true,
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  // prettier的配置 start
+  // 让prettier使用eslint的代码格式进行校验
+  "prettier.eslintIntegration": true,
+  "prettier.printWidth": 120, // 超过最大值换行
+  "prettier.tabWidth": 2, // 缩进字节数
+  "prettier.useTabs": false, // 缩进不使用tab，使用空格
+  "prettier.semi": true, // 句尾添加分号
+  // 使用单引号代替双引号,false 不替换
+  "prettier.singleQuote": true,
+  // 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行
+  "prettier.proseWrap": "preserve",
+  //  (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
+  "prettier.arrowParens": "avoid",
+  // 在对象，数组括号与文字之间加空格 "{ foo: bar }"
+  "prettier.bracketSpacing": true,
+  // 结尾是 \n \r \n\r auto，参数类型：lf / crlf / cr / auto，默认值：lf
+  "prettier.endOfLine": "lf",
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  // 不使用prettier格式化的文件填写在项目的.prettierignore文件中
+  "prettier.ignorePath": ".prettierignore",
+  // 在jsx中把'>' 是否单独放一行
+  "prettier.jsxBracketSameLine": false,
+  // 在jsx中使用单引号代替双引号
+  "prettier.jsxSingleQuote": false,
+  // 格式化的解析器，默认是babylon
+  "prettier.parser": "babylon",
+  // Require a 'prettierconfig' to format prettier
+  "prettier.requireConfig": false,
+  //不让prettier使用stylelint的代码格式进行校验
+  "prettier.stylelintIntegration": false,
+  // 在对象或数组最后一个元素后面是否加逗号: es5 / none / all，默认值：es5
+  "prettier.trailingComma": "none",
+  // 不让prettier使用tslint的代码格式进行校验
+  "prettier.tslintIntegration": false,
+  // 每行单个属性
+  "prettier.singleAttributePerLine": true,
+  // prettier的配置 end
+  "liveServer.settings.donotShowInfoMsg": true,
+  "tabnine.experimentalAutoImports": true,
+  "workbench.colorTheme": "SynthWave '84",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.enablePreview": false
 }
